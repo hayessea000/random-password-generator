@@ -13,18 +13,18 @@ var low=true
 var sy=true
 var item
 var er
+var random =function(){
+  er = Math.floor(Math.random() * /* change to all*/ number.length);
+
+  console.log(all) /* remove log*/
+  item = /* change to all*/number[er]
+  return item;
+}
 // need popups"number[0]+symbol[2]"
 
 
 var generatePassword = function(){
-  var random =function(){
-  er = Math.floor(Math.random() * number.length);
-
-  // get random item
-  console.log(all)
-  item = number[er]
-  return item;
-}
+  
 console.log(number)
 random()
 return item
