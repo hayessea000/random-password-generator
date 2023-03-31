@@ -6,13 +6,50 @@ var lowerCase = upperCase.map(upperCase => upperCase.toLowerCase())
 
 var symbol = [" ","!",`"`,"]","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[", "\\","]","^","_","`","{","|","}","~"]
 
-var all =3
-var num=true
-var up=true
-var low=true
-var sy=true
+var all =[]
+var num
+var up
+var low
+var sy
+var long
 var item
 var er
+
+var popup = function(){
+  num = confirm("Do you want to include NUMBERS in you password? Click OK for yes or Cancel for no.")
+  up = confirm("Do you want to include UPPERCASE LETTERS in you password? Click OK for yes or Cancel for no.")
+  low = confirm("Do you want to include LOWERCASE LETTERS in you password? Click OK for yes or Cancel for no.")
+  sy = confirm("Do you want to include SPECIAL CHARACTERS in you password? Click OK for yes or Cancel for no.")
+  make()
+  long = prompt("How long do you want your password to be?\nMust be between 8 and 128.")
+}
+
+var make =function(){
+  if (num==true){
+    all = all.concat(number)
+    alert("NUMBERS will be used in password.")
+  }if (up==true){
+    all= all.concat(upperCase)
+    alert("UPPERCASE LETTERS will be used in password.")
+  }if (low==true){
+    all= all.concat(lowerCase)
+    alert("LOWERCASE LETTERS will be used in password.")
+  }if (sy==true){
+    all= all.concat(symbol)
+    alert("SPECIAL CHARACTERS will be used in password.")
+  }if (num != true && up != true && low != true && sy != true){ 
+    console.log ("you need something")
+  }
+}
+
+var error = function(){
+  if (num != true && up != true && low != true && sy != true){
+    alert("You MUST use at least 1 kind of character. Try again.")
+  }if (8<= long <= 128){
+    alert("The length Must be between 8 and 128 . Try again.")
+  }
+}
+
 var random =function(){
   er = Math.floor(Math.random() * /* change to all*/ number.length);
 
@@ -20,33 +57,14 @@ var random =function(){
   item = /* change to all*/number[er]
   return item;
 }
-// need popups
-
-
-
-
-
 
 
 var generatePassword = function(){
-  
-console.log(number)
-random()
+  console.log(number)
+  popup()
+  random()
 return item
 }
-
-if (num==true){
-  all = all.concat(number)
-}if (up==true){
-  all= all.concat(upperCase)
-}if (low==true){
-  all= all.concat(lowerCase)
-}if (sy==true){
-  all= all.concat(symbol)
-}if (num != true && up != true && low != true && sy != true){ 
-  console.log ("you need something")
-}
-
 // if (num==true && up==true && low==true && sy==true){
 //     all = number.concat(upperCase,lowerCase,symbol)
 //     console.log (all)
