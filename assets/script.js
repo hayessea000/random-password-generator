@@ -12,8 +12,7 @@ var up
 var low
 var sy
 var long
-var item
-var er
+var item=[]
 
 var popup = function(){
   num = confirm("Do you want to include NUMBERS in you password? Click OK for yes or Cancel for no.")
@@ -48,19 +47,19 @@ var error = function(){
 }
 
 var random =function(){
-  er = Math.floor(Math.random() *  all.length);
-  item = all[er]
+  for( i = 0; i< long; i++){
+  var randomNumber = Math.floor(Math.random() *  all.length);
+  item.push(all[randomNumber])
+  }
   return item;
 }
 
-console.log()
 var generatePassword = function(){
   popup()
   make()
   random()
-  console.log(all)
   error()
-return item
+  return item.join("")
 }
 
 // Assignment Code
@@ -77,3 +76,6 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+
+
