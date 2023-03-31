@@ -20,7 +20,12 @@ var random =function(){
   item = /* change to all*/number[er]
   return item;
 }
-// need popups"number[0]+symbol[2]"
+// need popups
+
+
+
+
+
 
 
 var generatePassword = function(){
@@ -29,6 +34,19 @@ console.log(number)
 random()
 return item
 }
+
+if (num==true){
+  all = all.concat(number)
+}if (up==true){
+  all= all.concat(upperCase)
+}if (low==true){
+  all= all.concat(lowerCase)
+}if (sy==true){
+  all= all.concat(symbol)
+}if (num != true && up != true && low != true && sy != true){ 
+  console.log ("you need something")
+}
+
 // if (num==true && up==true && low==true && sy==true){
 //     all = number.concat(upperCase,lowerCase,symbol)
 //     console.log (all)
