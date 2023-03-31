@@ -1,3 +1,70 @@
+var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
+var lowerCase = upperCase.map(upperCase => upperCase.toLowerCase())
+
+var symbol = [" ","!",`"`,"]","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[", "\\","]","^","_","`","{","|","}","~"]
+
+var all 
+// = symbol.concat(upperCase, number) 
+var num=true
+var up=false
+var low=true
+var sy=false
+
+if (num==true && up==true && low==true && sy==true){
+    all = number.concat(upperCase,lowerCase,symbol)
+    console.log (all)
+}else if (num==true && up==true && low==true && sy==false){
+    all = number.concat(upperCase,lowerCase)
+    console.log (all)
+}else if (num==true && up==true && low==false && sy==true){
+    all = number.concat(upperCase,symbol)
+    console.log (all)
+}else if (num==true && up==false && low==true && sy==true){
+    all = number.concat(symbol,lowerCase)
+    console.log (all)
+}else if (num==false && up==true && low==true && sy==true){
+    all = symbol.concat(upperCase,lowerCase)
+    console.log (all)
+}else if (num==true && up==true && low==false && sy==false){
+    all = number.concat(upperCase)
+    console.log (all)
+}else if (num==true && up==false && low==true && sy==false){
+    all = number.concat(lowerCase)
+    console.log (all)
+}else if (num==false && up==true && low==true && sy==false){
+    all = upperCase.concat(lowerCase)
+    console.log (all)
+}else if (num==true && up==false && low==false && sy==true){
+    all = number.concat(symbol)
+    console.log (all)
+}else if (num==false && up==true && low==false && sy==true){
+    all = symbol.concat(upperCase)
+    console.log (all)
+}else if (num==false && up==false && low==true && sy==true){
+    all = symbol.concat(lowerCase)
+    console.log (all)
+}else if (num==false && up==false && low==false && sy==true){
+    all = symbol
+    console.log (all)
+}else if (num==false && up==false && low==true && sy==false){
+    all = lowerCase
+    console.log (all)
+}else if (num==false && up==true && low==false && sy==false){
+    all = upperCase
+    console.log (all)
+}else if (num==true && up==false && low==false && sy==false){
+    all = number
+    console.log (all)
+}else if (num==false && up==false && low==false && sy==false){
+    console.log ("you need something")
+}else{
+    console.log("error")
+}
+
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
