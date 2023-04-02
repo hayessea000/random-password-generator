@@ -1,5 +1,50 @@
 # random-password-generator
 
+## Descripion
+
+<!-- For this project I started from scratch and built it into a portfolio using HTML and CSS code. Things that are included are my name, contact info, and a little bit about me. In addition to that some navigation links have been provided to get around the page. Then finally I added some of my work that has been provided with links to them. This page will adjust to fit most screens. -->
+
+## technologys
+
+The webpage uses HTML and CSS and JavaScript
+
+## learned
+
+<!-- I learned how to format items across a webpage and how to make the webpage display nicely on different resolution devices.  -->
+
+## Task
+
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+
+## Struggles 
+
+<!-- The biggest struggle that I ran into during this project was remembering to position the container box to where I wanted the items to go. Once I got into the habit of that everything went very smoothly.  -->
+
+## Usage
+<!-- Use the navagation links in the top right to get around the page. By clicking on the projects a new page will open to it. -->
+
+## Webpage
+<!-- https://hayessea000.github.io/portfolio/
+![Here's a screenshot of the full webpage](./assets/images/portfolio_index.html.png) -->
+
+
+
+
+
 # 03 JavaScript: Password Generator
 
 ## Your Task
